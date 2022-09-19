@@ -1,0 +1,65 @@
+.result-card{
+    top:150px;
+    border: 2px solid #4070f4;
+    background: linen;
+    color: black;}
+
+.card-header h2{
+    color: #4070f4;
+    font-family: 'Ubuntu';
+    font-size: 30px;
+    text-align: center;
+
+}
+table{
+    width: 100%;
+}
+table,tr,td{
+    border-collapse: collapse;
+    text-align: center;
+
+
+  }
+  tr,th,td{
+    color: #4070f4;
+    border: 1px solid #4070f4;
+    text-align: center;
+    height: 50px;
+
+  }
+  th{
+    background-color: aquamarine;
+  }
+  td{
+    color: black;
+    background-color: lightcyan;
+  }
+
+.status-btn{
+    background-color: #ff0000;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+
+}
+
+
+
+
+.endbtn{
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    
+}
+
+.tsev{
+    font-weight: 500;
+}
+
+.dotdots{
+    position: absolute;
+    top:15vh;
+    left:37vw;
+}

@@ -1,0 +1,220 @@
+
+
+h4 {
+    margin-left: 77%;
+    margin-top: 20px;
+}
+img {
+    border-radius: 50%;
+    max-height: 8vh;
+    margin: 4px;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+} 
+.userIn {
+    background-color: #fff;
+    border: 2px solid black;
+    color: black;
+    position: absolute;
+    margin-top: 5px;
+    right:2vh;
+    border-radius: 18px;
+    padding: 4px;
+    text-align: center;
+}
+.logout{
+    color: #fff;
+    position: fixed;
+    margin-top: 6vh;
+    right:5.5vh;
+}
+.box1 {
+    margin-top: 12vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    padding: 10px;
+    color: black;
+    border: 2px solid rgb(79, 87, 161);
+    border-radius: 10px;
+  }
+  .box2 {
+    margin-top: 4vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+    width:90%;
+    color: black;
+    text-align: center;
+    border: 2px solid #4070f4;
+    border-radius: 20px;
+  }
+
+  table,tr,td{
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+
+  }
+  tr,td{
+    border: 1px solid #4070f4;
+
+  }
+
+  .dropclass{
+      margin-top: 75px;
+      margin-left: 20%;
+  }
+  .btn1{
+      border-radius: 5px;
+      width:75px;
+  }
+  th{
+      font-size: x-large;
+      border: 1px solid #4070f4;
+
+  }
+  .leftside{
+      padding-left: 15px;
+      text-align: center;
+      width: 30%;
+
+  }
+  .rightside{
+      padding-top: 2px;
+      padding-bottom: 2px;
+      text-align: center;
+      width: 20%;
+
+  }
+  .rightend{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    width: 30%;
+
+}
+  .topside{
+      border-top: 0px;
+      border-right: 0px;
+  }
+  .yesbtn{
+      margin-right: 10px;
+      border-radius: 5px;
+      width: 50px;
+  }
+  .nobtn{
+    border-radius: 5px;
+    width: 50px;
+}
+  #opt{
+    width: 20vh;
+    height: 6vh;
+    border-radius: 8px;
+    border:2px solid #4070f4;
+    FONT-VARIANT: JIS04;
+    position: inherit;
+    margin-left: 20px;
+    padding: 3px;
+  }
+  .finalsubmitbtn{
+      position: absolute;
+      left: 50%;
+      margin-top: 10px;
+      border-radius: 5px;
+      width:75px;
+      margin-bottom: 10%;
+      text-align: center;
+      left: 47%;
+  }
+  .lastrow{
+      border-bottom: 0px;
+  }
+.checkbtn  {
+    background-color: green;
+}
+.checkbtn:focus {     
+    background-color:yellow;    
+}
+.checkbtn:visited {
+    background-color: blue;
+}
+
+.qdiv{
+    border-radius: 10px;
+}
+
+.qdivbtn{
+
+    text-align: center;
+    margin: 10px;
+}
+
+.main{
+    /* background: linear-gradient(to right, skyblue, powderblue, lightgreen); */
+    position: relative;
+    /* z-index: -1;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px; */
+}
+
+.lastbtn{
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #4070f4;
+    width: 73%;
+    left: 30vh;
+    color: #4070f4;
+    position: absolute;
+    font-size: 20px;  
+    font-family: 'Ubuntu';
+    border-radius: 10px;  
+}
+
+
+.bigbtn{
+
+    padding: 5px;
+    width: 53vh;
+    background: #fff;
+    color: #4070f4;
+    border: 2px solid #4070f4;
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    border-radius: 10px;
+
+}
+.bigbtn:hover,.lastbtn:hover{
+    background:#4070f4;
+    color: white;
+}
+
+.largeLable{
+    font-size: x-large;
+    color: #4070f4;
+}
+
+.selectTag{
+    position: absolute;
+    top:90px;
+    left:870px;
+    width: 270px;
+    height: 5vh;
+}
+.tab1{
+   margin-left: 70vh;
+   margin-top: 7px;
+}
+.error-message{
+    position: absolute;
+    margin: 0%;
+    margin-bottom: 10px;
+    text-align: center;
+    left: 600px;
+    color: black;
+}

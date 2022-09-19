@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.mfpe.service.ProjectManagerDetailsServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.059 s <<< FAILURE! - in com.mfpe.service.ProjectManagerDetailsServiceTest
+loadUserByUsernameTest  Time elapsed: 0.059 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+This combination of annotations is not permitted on a single field:
+@Mock and @InjectMocks
+

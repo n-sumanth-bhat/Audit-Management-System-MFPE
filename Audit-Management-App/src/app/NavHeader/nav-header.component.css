@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+
+  nav{
+    position: fixed;
+    width: 100%;
+    background: #4070f4;
+    padding: -2px;
+    top: 0;
+    height: 9vh;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  nav .navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+
+  nav .navbar .logo{
+    font-weight: 500;
+    font-size: 35px;
+    color: #e5e6e8;
+  }
+
+
+
+/* This is a different css */
+header {
+    position: absolute;
+    width : 100%;
+    height : 6vh;
+    left:0%;
+    color: aliceblue;
+    background-color: #110338;
+    border: 1px solid rgb(23, 3, 95);
+}
+
+img {
+    border-radius: 50%;
+    max-height: 5vh;
+    margin: 5px;
+    margin-top: 9px;
+    
+}
+
+.headerTitle {
+    /* margin-left: 0%; */
+    margin-top: 10px;
+    margin: auto;
+
+}
+
+.userInfo {
+    /* background-color: black; */
+    border: 2px solid white;
+    color: white; 
+    position: absolute;
+    margin-top: 12px;
+    width: 150px;
+    right:10vh;
+    border-radius: 10px;
+    padding: 4px;
+    text-align: center;
+}
+
+.logged-user{
+    border: 2px solid white;
+    color: white;
+    position: absolute;
+    top: 1.5vh;
+    width: 150px;
+    right: 24vh;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+}
+
+
+
+.logout-user{
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+    position: absolute;
+    top: 1.5vh;
+    width: 150px;
+    right: 1vh;
+    border-radius: 10px;
+    padding: 6px;
+    text-align: center;
+}
+
+.gotopages{
+    position: absolute;
+    top: 5px;
+    right:52vh;
+}
+#navbarNav{
+    /* background-color: lightseagreen; */
+    /* color: white; */
+    position: absolute;
+    padding-top: 1vh;
+    left: 2vw;
+    z-index:2;
+    /* border-left: 1px solid;
+    border-color: white;
+    padding-left: 15px; */
+}
+
+.nav-item :hover{
+    background-color: rgb(141, 219, 250);
+    color: #191919;
+}

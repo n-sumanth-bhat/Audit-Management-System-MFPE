@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Header -->
+<app-nav-header></app-nav-header>
+<!-- Component Body -->
+<div class="dotdots" *ngIf="status.length==0">
+<div class="spinner-grow text-primary p-2 m-2" role="status">
+    <span class="visually-hidden px-2">Loading...</span>
+  </div>
+  <div class="spinner-grow text-secondary p-2 m-2" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-success p-2 m-2" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-danger p-2 m-2" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-warning p-2 m-2" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-info p-2 m-2" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-light p-2 m-2" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="spinner-grow text-dark p-2 m-2" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+<div class="card result-card" >
+    <div class="card-header" *ngIf="status.length>0">
+      <h2>Audit-Result</h2>
+    </div>
+    <div class="card-body" *ngIf="status.length>0">
+      <h5 class="card-title">Project-Details</h5>
+      <table>
+        <thead>
+            <tr>
+                <th>Audit-Tracking-Id</th>
+                <th>Project-Manager Name</th>
+                <th>Project Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <span>{{auditResponse.auditId}}</span>
+                </td>
+                <td>
+                    <span>{{auditResponse.managerName}}</span>
+                </td>
+                <td>
+                    <span>{{auditResponse.projectName}}</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="card-body" *ngIf="status.length>0">
+        <h5 class="card-title ">Audit-Details</h5>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project Execution Status</th>
+                    <th>Remedial Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="status-btn m-auto" [style.background]="status" disabled><span>{{auditResponse.projectExecutionStatus}}</span></div>
+                    </td>
+                    <td>
+                        <span>{{this.auditResponse.remedialActionDuration}}</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <a ><button (click)="router.navigate(['checklist'])">Back to Checklist</button></a> -->
+    <a class="endbtn" routerLink="../checklist" *ngIf="status.length>0"><button class="btn btn-warning">Back to Checklist</button></a>
+
+</div>

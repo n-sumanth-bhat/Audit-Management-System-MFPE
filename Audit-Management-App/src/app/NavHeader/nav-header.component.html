@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!-- Header -->
+<nav>
+  <div class="navbar">
+    <div class="logo">Audit Management System</div>
+  </div>
+  <!-- <img class="username-pic" *ngIf="user.logStatus" src="https://img.icons8.com/officel/16/000000/user.png" alt="LOGO"  height="90%">
+        <div class="userInfo" *ngIf="user.logStatus">
+            <h6>{{ user.username | titlecase }}</h6>
+        </div> -->
+        <div class="logged-user" *ngIf="user.logStatus"><i class="bi bi-person-check">{{user.username | titlecase }}</i></div>
+        <!-- logout -->
+        <div class="logout-user" *ngIf="user.logStatus" (click)="logout()"><i class="bi bi-box-arrow-right">Logout</i></div>
+  <div class="menu-btn">
+    <i class="fas fa-bars"></i>
+  </div>
+</nav>

@@ -1,0 +1,158 @@
+
+.login-form {
+    width: 550px;
+    margin: auto;
+    height: fit-content;
+    margin-top: 25vh;
+    position: relative;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 0 2px 25px rgb(0 0 0 / 20%);
+  }
+  .login-form h1 {
+    padding: 35px 35px 0 35px;
+    font-weight: 300;
+  }
+  .login-form .content {
+    padding: 35px;
+    text-align: center;
+  }
+  .login-form .input-field {
+    padding: 12px 5px;
+  }
+  .login-form .input-field input {
+    font-size: 20px;
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    padding: 10px 1px;
+    border: 0;
+    border-bottom: 1px solid #747474;
+    outline: none;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+
+   
+  
+  /* .login-form .input-field input::-webkit-input-placeholder {
+    text-transform: uppercase;
+  }
+  .login-form .input-field input::-moz-placeholder {
+    text-transform: uppercase;
+  }
+  .login-form .input-field input:-ms-input-placeholder {
+    text-transform: uppercase;
+  }
+  .login-form .input-field input::-ms-input-placeholder {
+    text-transform: uppercase;
+  }
+  .login-form .input-field input::placeholder {
+    text-transform: uppercase;
+  }
+  .login-form .input-field input:focus {
+    border-color: #222;
+  } */
+  .login-form a.link {
+    text-decoration: none;
+    color: #747474;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .login-form .action {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+  }
+
+  .error-message{
+    width: 550px;
+    margin: auto;
+    height: fit-content;
+    position: relative;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+
+/* This is a css */
+.card {
+    margin-bottom: 20px;
+    border: none
+}
+
+.box {
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    border-radius: 25px;
+    background: white;
+    ;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 100px
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s
+}
+
+.box h1 {
+    color: black;
+    font-weight: 500
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 300px;
+    border-color: #2ecc71
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.box input[type="submit"]:hover {
+    background: #2ecc71
+}
+
+.forgot {
+    text-decoration: underline
+}
+
+/* .error-message{
+    position: absolute;
+    top : 500px;
+    left: 590px;
+    width: 340px;
+    text-align: center;
+} */

@@ -1,0 +1,47 @@
+<!-- Header -->
+<app-nav-header></app-nav-header>
+<!-- Component Body -->
+<div class="main">
+    <form class=" box1" *ngIf="securityService.getLoginStatus()">
+        <div class="tab1">
+        <label class="largeLable" for="opt">Choose Audit Type : </label>
+        <select class="selectTag" name="opt" id="opt" [(ngModel)]="type">
+            <option value="">Select</option>
+            <option value="Internal">Internal</option>
+            <option value="SOX">SOX</option>
+        </select>
+        <br><br>
+        <input class="bigbtn" type="submit" value="See Questions" (click)="getQuestions()" *ngIf="type.length>0">
+    </div>
+    <div class="d-flex justify-content-center container qdiv py-3" *ngIf="loadFlag && questions.length==0">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    </form>
+    <div class="container qdiv" *ngIf="questions.length>0">
+        <table class="box2" >
+            <!--We can use "box2" and add rows by using a default format "<tr>", last one will be different, so last one will have to be assigned separately-->
+            <tr>
+                <th class="leftside topside">Question</th>
+                <th class="rightside topside">Choices</th>
+                <th class="rightside topside">Response</th> 
+            </tr>
+            <tr *ngFor="let question of questions;let i = index">
+                <td class="leftside" name="question" >{{question.question}}</td>
+                <td class="rightend" name="response_table_data" >
+                    <input type="button" value="YES" class="btn btn-outline-success mx-4 px-4" (click) = "responseYes(i)"/>
+                    <input type="button" value="NO" class="btn btn-outline-danger mx-4 px-4"(click) = "responseNo(i)"/>
+                </td>
+                <td class="rightside" name="auditType">{{question.response}}</td>
+                
+            </tr>
+        </table>
+        <div class="qdivbtn">
+            <button type="submit" class="lastbtn" (click)="getResponse()">Submit</button>
+        </div>
+        <div class="alert alert-warning error-message" role="alert" *ngIf="message.length>0">
+            {{ message }}
+        </div>
+    </div>
+</div>

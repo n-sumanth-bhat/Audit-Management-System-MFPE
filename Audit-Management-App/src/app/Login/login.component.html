@@ -1,0 +1,41 @@
+<app-nav-header></app-nav-header>
+
+<div>
+<div class="login-form">
+    <form (ngSubmit)="onLogIn()">
+      <h1>Login</h1>
+      <div class="content">
+        <div class="input-field">
+            <input type="text" [(ngModel)]="username" name="username" placeholder="UserName" required> 
+        </div>
+        <div class="input-field">
+            <input type="password" [(ngModel)]="password" name="password" placeholder="Password" required>  
+        </div>
+        <input type="submit" class="btn btn-primary btn-lg btn-block" name="" value="Login" />
+
+      </div>
+
+    </form>
+    </div>
+    <div class="alert alert-danger error-message" role="alert" *ngIf="message.length>0">
+        {{ message }}
+    </div>
+</div>
+ 
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card rounded">
+                <form class="box" autocomplete="off" (ngSubmit)="onLogIn()">
+                    <p class="text-muted"> Please Enter Your Username and Password!</p> 
+                    <input type="text" [(ngModel)]="username" name="username" placeholder="UserName" required> 
+                    <input type="password" [(ngModel)]="password" name="password" placeholder="Password" required>  
+                    <input type="submit" name="" value="Login">
+                </form>
+            </div>
+            <div class="alert alert-danger error-message" role="alert" *ngIf="message.length>0">
+                {{ message }}
+            </div>
+        </div>
+    </div>
+</div>     -->
