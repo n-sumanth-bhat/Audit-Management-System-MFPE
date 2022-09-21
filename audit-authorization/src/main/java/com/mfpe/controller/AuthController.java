@@ -61,14 +61,13 @@ public class AuthController {
 
 		// authenticating the User-Credentials
 		try {
-			System.out.println("The entered password is"+request.getPassword());
+			//System.out.println("The entered password is"+request.getPassword());
 			Authentication authenticate = authenticationManager.authenticate(
 					new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword()));
 			
 			// else when it authenticates successfully
 			final ProjectManagerDetails projectManagerDetails = projectManagerDetailsService
 					.loadUserByUsername(request.getUsername());
-			System.out.println(projectManagerDetails.getPassword());
 
 			final String jwt = jwtService.generateToken(projectManagerDetails); // returning the token as response
 

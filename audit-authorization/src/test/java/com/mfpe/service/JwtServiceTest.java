@@ -15,7 +15,6 @@ import com.mfpe.model.ProjectManagerDetails;
 import io.jsonwebtoken.Jwts;
 
 @ExtendWith(MockitoExtension.class)
-@ActiveProfiles("test")
 class JwtServiceTest {
 	
 //	@Mock

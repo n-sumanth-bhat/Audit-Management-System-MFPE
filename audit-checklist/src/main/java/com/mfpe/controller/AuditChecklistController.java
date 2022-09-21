@@ -48,7 +48,8 @@ public class AuditChecklistController {
 
 		if (jwt.length() > 0 && authorizationService.validateJwt(jwt)) {
 			questions = questionService.getQuestionsByAuditType(auditType);
-		} else {
+		} 
+		else {			
 			throw new ValidationException("The jwt token is not valid");
 		}
 		return questions;

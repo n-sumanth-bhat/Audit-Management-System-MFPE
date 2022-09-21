@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.mfpe.controller.AuditChecklistController;
+
 @SpringBootTest
 class AuditChecklistApplicationTests {
 
@@ -13,8 +15,9 @@ class AuditChecklistApplicationTests {
 	AuditChecklistApplication auditChecklistApplication;
 
 	@Test
-	void contextLoads() {
-		assertNotNull(auditChecklistApplication);
+	void main() {
+		AuditChecklistApplication.main(new String[] {});
+		
 	}
 
 }

@@ -9,12 +9,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class AuditSeverityApplicationTests {
 
-	@Autowired
-	AuditSeverityApplication auditSeverityApplication;
-
 	@Test
-	public void contextLoads() {
-		assertNotNull(auditSeverityApplication);
+	public void main() {
+		AuditSeverityApplication.main(new String [] {});
 	}
 
 }

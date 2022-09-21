@@ -5,9 +5,12 @@ import javax.validation.constraints.NotEmpty;
 import org.springframework.stereotype.Component;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Component
-@Data
+@Getter
+@Setter
 public class AuthenticationRequest {
 	@NotEmpty
 	private String username;

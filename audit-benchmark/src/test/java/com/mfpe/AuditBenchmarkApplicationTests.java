@@ -13,8 +13,8 @@ class AuditBenchmarkApplicationTests {
 	AuditBenchmarkApplication auditBenchmarkApplication;
 
 	@Test
-	void contextLoads() {
-		assertNotNull(auditBenchmarkApplication);
+	void main() {
+		AuditBenchmarkApplication.main(new String[] {});
 	}
 
 }

@@ -2,6 +2,7 @@ package com.mfpe.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
@@ -12,6 +13,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.mfpe.exception.ValidationException;
 import com.mfpe.model.Question;
 import com.mfpe.service.AuthorizationService;
 import com.mfpe.service.QuestionService;
@@ -50,5 +52,15 @@ public class AuditChecklistControllerTests {
 		when(questionService.getQuestionsByAuditType(auditType)).thenReturn(questions);
 
 		assertEquals(questions, controller.auditCheckListQuestions("jwt", auditType));
+	}
+	
+	@Test
+	public void testAuditChecklistQuestions1() {
+		List<Question> questions = new ArrayList<Question>();
+		questions.add(new Question(1, "question", "auditType", "response"));
+
+		when(authorizationService.validateJwt("jwt")).thenReturn(false);
+		assertThrows(ValidationException.class,() -> controller.auditCheckListQuestions("jwt", null));
+
 	}
 }

@@ -17,14 +17,15 @@ import org.springframework.stereotype.Component;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@ToString
-@Component
 
-@Data
+@Component
+@Getter
+@Setter
 @Entity
 @Table(name = "project_manager_details")
 @NoArgsConstructor
